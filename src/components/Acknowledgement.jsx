@@ -3,7 +3,8 @@ import { useReactToPrint } from "react-to-print";
 import { dataStore } from "../context/Store";
 
 const Acknowledgement = () => {
-   const { paymentId, details, setAcknowledgement } = useContext(dataStore);
+   const { paymentId, details, setAcknowledgement, setDetails } =
+      useContext(dataStore);
    const { personOneName, personTwoName } = details;
 
    const componentRef = useRef();
@@ -12,6 +13,16 @@ const Acknowledgement = () => {
    });
    const hideAcknowledgement = () => {
       setAcknowledgement(false);
+      setDetails({
+         personOneName: "",
+         personTwoName: "",
+         collegeName: "",
+         group: "",
+         year: "",
+         personOneRollNumber: "",
+         personTwoRollNumber: "",
+         amount: "",
+      });
    };
 
    return (
