@@ -115,6 +115,7 @@ const Register = () => {
       e.preventDefault();
 
       const userDetailsUpdated = await user(details, setErrors);
+      console.log(userDetailsUpdated);
 
       if (userDetailsUpdated.noError) {
          await payment(details, setPaymentId, setAcknowledgement);

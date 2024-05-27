@@ -15,11 +15,11 @@ const Acknowledgement = () => {
    };
 
    return (
-      <section className="flex justify-start bg-black items-center p-4 m-4 rounded ">
-         <div
-            ref={componentRef}
-            className="max-w-[800px] w-[800px] mx-auto shadow-md text-center px-2"
-         >
+      <section
+         ref={componentRef}
+         className="flex justify-start bg-black items-center p-4 m-4 rounded "
+      >
+         <div className="max-w-[800px] w-[800px] mx-auto shadow-md text-center px-2">
             <h1 className="text-center mt-12 uppercase text-xl md:text-4xl gradient font-medium md:font-semibold tracking-wider border-b-2 border-b-white pb-2 ">
                Acknowledgement
             </h1>
