@@ -1,7 +1,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
-import { pic1, pic2, pic3, pic4, pic5, pic6 } from "../images/images";
+import { images } from "../images/images";
 
 // Import Swiper styles
 import "swiper/css";
@@ -27,78 +27,20 @@ const Glimps = () => {
             }}
             className=" mt-11 black md:pl-16"
          >
-            <SwiperSlide>
-               <div className="w-96 h-60">
-                  <img
-                     loading="lazy"
-                     width={384}
-                     height={240}
-                     src={pic1}
-                     alt="pic1"
-                     className="object-cover w-full h-full"
-                  />
-               </div>
-            </SwiperSlide>
-            <SwiperSlide>
-               <div className="w-96 h-60">
-                  <img
-                     loading="lazy"
-                     width={384}
-                     height={240}
-                     src={pic2}
-                     alt="pic2"
-                     className="object-cover w-full h-full"
-                  />
-               </div>
-            </SwiperSlide>
-            <SwiperSlide>
-               <div className="w-96 h-60">
-                  <img
-                     loading="lazy"
-                     width={384}
-                     height={240}
-                     src={pic3}
-                     alt="pic3"
-                     className="object-cover w-full h-full"
-                  />
-               </div>
-            </SwiperSlide>
-            <SwiperSlide>
-               <div className="w-96 h-60">
-                  <img
-                     loading="lazy"
-                     width={384}
-                     height={240}
-                     src={pic4}
-                     alt="pic4"
-                     className="object-cover w-full h-full"
-                  />
-               </div>
-            </SwiperSlide>
-            <SwiperSlide>
-               <div className="w-96 h-60">
-                  <img
-                     loading="lazy"
-                     width={384}
-                     height={240}
-                     src={pic5}
-                     alt="pic5"
-                     className="object-cover w-full h-full"
-                  />
-               </div>
-            </SwiperSlide>
-            <SwiperSlide>
-               <div className="w-96 h-60">
-                  <img
-                     loading="lazy"
-                     width={384}
-                     height={240}
-                     src={pic6}
-                     alt="pic6"
-                     className="object-cover w-full h-full"
-                  />
-               </div>
-            </SwiperSlide>
+            {images.map((image) => (
+               <SwiperSlide key={image.id}>
+                  <div className="w-96 h-60">
+                     <img
+                        loading="lazy"
+                        width={384}
+                        height={240}
+                        src={image.img}
+                        alt="pic1"
+                        className="object-cover w-full h-full"
+                     />
+                  </div>
+               </SwiperSlide>
+            ))}
          </Swiper>
       </div>
    );

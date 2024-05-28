@@ -4,20 +4,29 @@ export const logo =
 export const tophy =
    "https://res.cloudinary.com/dqlgjekue/image/upload/v1716228846/BADRUKA/trophy_cmk0bx.webp";
 
-export const pic1 =
-   "https://res.cloudinary.com/dqlgjekue/image/upload/v1716228605/BADRUKA/pic1_oejjzq.webp";
-
-export const pic2 =
-   "https://res.cloudinary.com/dqlgjekue/image/upload/v1716228602/BADRUKA/pic2_zvkk5c.webp";
-
-export const pic3 =
-   "https://res.cloudinary.com/dqlgjekue/image/upload/v1716228603/BADRUKA/pic3_th30va.webp";
-
-export const pic4 =
-   "https://res.cloudinary.com/dqlgjekue/image/upload/v1716228602/BADRUKA/pic4_tpns6b.webp";
-
-export const pic5 =
-   "https://res.cloudinary.com/dqlgjekue/image/upload/v1716228449/BADRUKA/pic5_2_h4eham.webp";
-
-export const pic6 =
-   "https://res.cloudinary.com/dqlgjekue/image/upload/v1716228600/BADRUKA/pic6_1_phlgp5.webp";
+export const images = [
+   {
+      id: 1,
+      img: "https://res.cloudinary.com/dqlgjekue/image/upload/v1716228605/BADRUKA/pic1_oejjzq.webp",
+   },
+   {
+      id: 2,
+      img: "https://res.cloudinary.com/dqlgjekue/image/upload/v1716228602/BADRUKA/pic2_zvkk5c.webp",
+   },
+   {
+      id: 3,
+      img: "https://res.cloudinary.com/dqlgjekue/image/upload/v1716228603/BADRUKA/pic3_th30va.webp",
+   },
+   {
+      id: 4,
+      img: "https://res.cloudinary.com/dqlgjekue/image/upload/v1716228602/BADRUKA/pic4_tpns6b.webp",
+   },
+   {
+      id: 5,
+      img: "https://res.cloudinary.com/dqlgjekue/image/upload/v1716228449/BADRUKA/pic5_2_h4eham.webp",
+   },
+   {
+      id: 6,
+      img: "https://res.cloudinary.com/dqlgjekue/image/upload/v1716228600/BADRUKA/pic6_1_phlgp5.webp",
+   },
+];
