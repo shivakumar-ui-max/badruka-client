@@ -31,6 +31,8 @@ const Prizes = () => {
                </div>
                <div className="w-32 h-32  flex justify-center items-center shadow-lg bg rounded-md overflow-hidden">
                   <img
+                     width={128}
+                     height={128}
                      src={tophy}
                      alt="prize"
                      className="shrink-0 w-16 drop-shadow-md "

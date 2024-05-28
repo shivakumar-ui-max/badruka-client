@@ -28,6 +28,7 @@ const Navbar = () => {
                   <div className="flex ">
                      <img
                         src={logo}
+                        loading="lazy"
                         alt="logo"
                         className="w-[50px] h-[50px] rounded-full"
                      />

@@ -31,6 +31,8 @@ const Glimps = () => {
                <div className="w-96 h-60">
                   <img
                      loading="lazy"
+                     width={384}
+                     height={240}
                      src={pic1}
                      alt="pic1"
                      className="object-cover w-full h-full"
@@ -41,6 +43,8 @@ const Glimps = () => {
                <div className="w-96 h-60">
                   <img
                      loading="lazy"
+                     width={384}
+                     height={240}
                      src={pic2}
                      alt="pic2"
                      className="object-cover w-full h-full"
@@ -51,6 +55,8 @@ const Glimps = () => {
                <div className="w-96 h-60">
                   <img
                      loading="lazy"
+                     width={384}
+                     height={240}
                      src={pic3}
                      alt="pic3"
                      className="object-cover w-full h-full"
@@ -61,6 +67,8 @@ const Glimps = () => {
                <div className="w-96 h-60">
                   <img
                      loading="lazy"
+                     width={384}
+                     height={240}
                      src={pic4}
                      alt="pic4"
                      className="object-cover w-full h-full"
@@ -71,6 +79,8 @@ const Glimps = () => {
                <div className="w-96 h-60">
                   <img
                      loading="lazy"
+                     width={384}
+                     height={240}
                      src={pic5}
                      alt="pic5"
                      className="object-cover w-full h-full"
@@ -81,6 +91,8 @@ const Glimps = () => {
                <div className="w-96 h-60">
                   <img
                      loading="lazy"
+                     width={384}
+                     height={240}
                      src={pic6}
                      alt="pic6"
                      className="object-cover w-full h-full"

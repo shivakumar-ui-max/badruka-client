@@ -33,17 +33,17 @@ const Home = () => {
          <div className="flex-1 ">
             <div className="flex justify-between items-center">
                <div className="flex flex-col gap-2 flex-1">
-                  <h3 className="text-2xl textBlack capitalize font-semibold md:3xl">
+                  <h2 className="text-2xl textBlack capitalize font-semibold md:3xl">
                      venue
-                  </h3>
+                  </h2>
                   <span className="capitalize text-base">
                      badruka college auditorium
                   </span>
                </div>
                <div className="flex flex-col gap-2 flex-1">
-                  <h3 className="textBlack text-2xl capitalize font-semibold md:3xl">
+                  <h2 className="textBlack text-2xl capitalize font-semibold md:3xl">
                      Date & time
-                  </h3>
+                  </h2>
                   <span className="text-base mr-1 ">
                      9 february , 2024 , 10:00 AM to 6:00 PM
                   </span>

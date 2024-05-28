@@ -10,9 +10,9 @@ const Contact = () => {
          className=" w-full  black text-white mt-8 tracking-wide py-4"
          id="contact"
       >
-         <h4 className="uppercase text-center mt-12 font-bold text-xl gradient">
+         <h2 className="uppercase text-center mt-12 font-bold text-xl gradient">
             contact us
-         </h4>
+         </h2>
          <div className="container mx-auto flex justify-between flex-col gap-6 md:flex-row pt-14">
             <div className="aboutUs flex-1 px-5">
                <h5>Bankatlal Badruka College for information Technology</h5>
@@ -145,14 +145,23 @@ const Contact = () => {
             <div>
                <h6 className="text-base tracking-wide">follow us</h6>
                <div className="flex justify-center items-center gap-10 my-5">
-                  <a href="https://www.facebook.com/profile.php?id=100092649845440&mibextid=kFxxJD">
+                  <a
+                     href="https://www.facebook.com/profile.php?id=100092649845440&mibextid=kFxxJD"
+                     aria-label="visit our Facebook"
+                  >
                      <FaFacebookF className="text-[#1877F2]" />
                   </a>
-                  <a href="https://www.instagram.com/badruka_bbcit?igsh=MTdtaXVsanZsemx6OA==">
+                  <a
+                     href="https://www.instagram.com/badruka_bbcit?igsh=MTdtaXVsanZsemx6OA=="
+                     aria-label="vitsit our Instagram"
+                  >
                      <FaInstagram className="text-[#ff6464]" />
                   </a>
 
-                  <a href="https://youtube.com/@BBCIT-Hyderabad?si=415m9t2uBv8mC71J">
+                  <a
+                     href="https://youtube.com/@BBCIT-Hyderabad?si=415m9t2uBv8mC71J"
+                     aria-label="visit our Youtube"
+                  >
                      <FaYoutube className="text-[#CD201F]" />
                   </a>
                </div>
