@@ -15,7 +15,7 @@ const Contact = () => {
          </h2>
          <div className="container mx-auto flex justify-between flex-col gap-6 md:flex-row pt-14">
             <div className="aboutUs flex-1 px-5">
-               <h5>Bankatlal Badruka College for information Technology</h5>
+               <h3>Bankatlal Badruka College for information Technology</h3>
                <p className="text-xs text-justify mt-3 text-slate-200 tracking-wide">
                   Bankatlal Badruka College for Information Technology (BBCIT),
                   named in honour of the founder, was established in 1991 to
@@ -25,7 +25,7 @@ const Contact = () => {
                </p>
             </div>
             <div className="flex-1 px-5">
-               <h5>Faculty Co-ordinators :</h5>
+               <h4>Faculty Co-ordinators :</h4>
                <div className="mt-3 ">
                   {/* sunny */}
 
@@ -42,7 +42,7 @@ const Contact = () => {
                </div>
             </div>
             <div className="flex-1 px-5">
-               <h5>Co-ordinators :</h5>
+               <h4>Co-ordinators :</h4>
                <div className="mt-3 ">
                   {/* sunny */}
 
@@ -143,7 +143,7 @@ const Contact = () => {
          {/* follow */}
          <div className="follow text-center pt-5  mt-6">
             <div>
-               <h6 className="text-base tracking-wide">follow us</h6>
+               <h5 className="text-base tracking-wide">follow us</h5>
                <div className="flex justify-center items-center gap-10 my-5">
                   <a
                      href="https://www.facebook.com/profile.php?id=100092649845440&mibextid=kFxxJD"

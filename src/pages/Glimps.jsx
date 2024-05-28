@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import { images } from "../images/images";
@@ -7,6 +7,16 @@ import { images } from "../images/images";
 import "swiper/css";
 
 const Glimps = () => {
+   const [loaded, setLoaded] = useState(images.map(() => false));
+
+   const handleImageLoad = (index) => {
+      setLoaded((prevLoaded) => {
+         const newLoaded = [...prevLoaded];
+         newLoaded[index] = true;
+         return newLoaded;
+      });
+   };
+
    return (
       <div className="mt-16" id="glimps">
          <h3 className="text-center text-3xl uppercase tracking-wide textBlack font-bold">
@@ -25,18 +35,24 @@ const Glimps = () => {
                   slidesPerView: 3,
                },
             }}
-            className=" mt-11 black md:pl-16"
+            className="mt-11 black md:pl-16"
          >
-            {images.map((image) => (
+            {images.map((image, index) => (
                <SwiperSlide key={image.id}>
-                  <div className="w-96 h-60">
+                  <div
+                     className="w-96 h-60 bg-cover bg-center"
+                     style={{ backgroundImage: `url(${image.imgBlur})` }}
+                  >
                      <img
                         loading="lazy"
                         width={384}
                         height={240}
                         src={image.img}
-                        alt="pic1"
-                        className="object-cover w-full h-full"
+                        alt={`pic${index + 1}`}
+                        className={`object-cover w-full h-full transition-opacity duration-500 ${
+                           loaded[index] ? "opacity-100" : "opacity-0"
+                        }`}
+                        onLoad={() => handleImageLoad(index)}
                      />
                   </div>
                </SwiperSlide>
