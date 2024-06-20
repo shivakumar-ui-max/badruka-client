@@ -26,6 +26,7 @@ const Store = ({ children }) => {
    const [acknowledgement, setAcknowledgement] = useState(false);
    const [paymentId, setPaymentId] = useState("");
    const [register, setRegister] = useState(null);
+   const [loading, setLoading] = useState(false);
    return (
       <>
          <dataStore.Provider
@@ -42,6 +43,8 @@ const Store = ({ children }) => {
                setPaymentId,
                register,
                setRegister,
+               loading,
+               setLoading,
             }}
          >
             {children}

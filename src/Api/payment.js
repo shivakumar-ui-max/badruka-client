@@ -1,8 +1,14 @@
 import registration from "./registeration.db";
 
-const payment = async (details, setPaymentId, setAcknowledgement) => {
+const payment = async (
+   details,
+   setPaymentId,
+   setAcknowledgement,
+   setLoading
+) => {
    const { personOneName, personTwoName, amount } = details;
    try {
+      setLoading(true);
       const response = await fetch(
          `${import.meta.env.VITE_BASE_URL}/api/payment`,
          {
@@ -20,6 +26,7 @@ const payment = async (details, setPaymentId, setAcknowledgement) => {
       const data = await response.json();
       if (!data) {
          console.log("Failed to create payment");
+         setLoading(false);
       }
 
       const options = {
@@ -56,8 +63,10 @@ const payment = async (details, setPaymentId, setAcknowledgement) => {
 
       const rzp = new window.Razorpay(options);
       rzp.open();
+      setLoading(false);
    } catch (error) {
-      console.log(error.message);
+      console.error(error.message);
+      setLoading(false);
    }
 };
 

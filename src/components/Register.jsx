@@ -4,6 +4,7 @@ import { RiArrowRightSLine } from "react-icons/ri";
 import { dataStore } from "../context/Store";
 import payment from "../Api/payment";
 import user from "../Api/user";
+import Loading from "./Loading";
 
 const Register = () => {
    const {
@@ -13,6 +14,8 @@ const Register = () => {
       setErrors,
       setPaymentId,
       setAcknowledgement,
+      loading,
+      setLoading,
    } = useContext(dataStore);
 
    const {
@@ -114,11 +117,18 @@ const Register = () => {
    const handleSubmit = async (e) => {
       e.preventDefault();
 
-      const userDetailsUpdated = await user(details, setErrors);
-      console.log(userDetailsUpdated);
+      const isValid = validateForm(details);
 
-      if (userDetailsUpdated.noError) {
-         await payment(details, setPaymentId, setAcknowledgement);
+      if (isValid) {
+         const userDetailsUpdated = await user(details, setErrors);
+         if (userDetailsUpdated.noError) {
+            await payment(
+               details,
+               setPaymentId,
+               setAcknowledgement,
+               setLoading
+            );
+         }
       }
    };
 
@@ -248,8 +258,14 @@ const Register = () => {
                type="submit"
                className="mt-9 uppercase tracking-wider text-xl text-white border-2 shadow-md py-2 rounded-md flex justify-center items-center gap-2 bg-[rgba(0,0,0,0.690)]"
             >
-               Submit
-               <RiArrowRightSLine />
+               {Loading ? (
+                  "Loading..."
+               ) : (
+                  <>
+                     submit
+                     <RiArrowRightSLine />
+                  </>
+               )}
             </button>
          </form>
       </section>

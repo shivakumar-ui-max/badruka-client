@@ -38,13 +38,13 @@ const App = () => {
                   {show ? (
                      <Register />
                   ) : (
-                     <main>
+                     <>
                         <Home />
                         <Prizes />
                         <Glimps />
                         <BbcitInfo />
                         <Contact />
-                     </main>
+                     </>
                   )}
                </div>
             )}

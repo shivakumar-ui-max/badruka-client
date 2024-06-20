@@ -40,13 +40,13 @@ const Glimps = () => {
             {images.map((image, index) => (
                <SwiperSlide key={image.id}>
                   <div
-                     className="w-96 h-60 bg-cover bg-center"
+                     className="w-96 h-72 bg-cover bg-center"
                      style={{ backgroundImage: `url(${image.imgBlur})` }}
                   >
                      <img
                         loading="lazy"
                         width={384}
-                        height={240}
+                        height={288}
                         src={image.img}
                         alt={`pic${index + 1}`}
                         className={`object-cover w-full h-full transition-opacity duration-500 ${
