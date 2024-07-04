@@ -258,7 +258,7 @@ const Register = () => {
                type="submit"
                className="mt-9 uppercase tracking-wider text-xl text-white border-2 shadow-md py-2 rounded-md flex justify-center items-center gap-2 bg-[rgba(0,0,0,0.690)]"
             >
-               {Loading ? (
+               {loading ? (
                   "Loading..."
                ) : (
                   <>
